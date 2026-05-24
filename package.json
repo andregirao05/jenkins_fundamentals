@@ -9,6 +9,8 @@
     "dev": "ts-node src/index.ts",
     "prepare": "husky",
     "test": "vitest run",
+    "test:unit": "vitest run src/tests/validators src/tests/cli/cli.unit.test.ts",
+    "test:integration": "vitest run src/tests/cli/cli.integration.test.ts src/tests/cli/cli-validator.integration.test.ts",
     "test:watch": "vitest"
   },
   "keywords": [],

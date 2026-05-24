@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(node dist/index.js 529.982.247-25)",
+      "Bash(node dist/index.js 52998224724)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(npm test *)"
+    ]
+  }
+}
