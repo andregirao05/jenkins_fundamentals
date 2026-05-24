@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "strict": true,
+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "useUnknownInCatchVariables": true,
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "types": ["node"]
+  },
+
+  "include": ["src"]
+}
