@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:unit": "vitest run src/tests/validators src/tests/cli/cli.unit.test.ts",
     "test:integration": "vitest run src/tests/cli/cli.integration.test.ts src/tests/cli/cli-validator.integration.test.ts",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@commitlint/cli": "^21.0.1",
     "@commitlint/config-conventional": "^21.0.1",
     "@types/node": "^25.9.1",
+    "@vitest/coverage-v8": "^4.1.7",
     "husky": "^9.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
