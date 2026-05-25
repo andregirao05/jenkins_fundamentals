@@ -1,0 +1,39 @@
+services:
+
+  build:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: npm run build
+
+  test:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: npm test
+
+  test-unit:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: npm run test:unit
+
+  test-integration:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: npm run test:integration
+
+  coverage:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: npm run coverage
+
+volumes:
+  node_modules:
