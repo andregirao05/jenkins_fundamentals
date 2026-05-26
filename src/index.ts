@@ -7,4 +7,4 @@ if (!cpfArg) {
     process.exit(1);
 }
 
-validateAndPrint(cpfArg);
+validateAndPrint(
