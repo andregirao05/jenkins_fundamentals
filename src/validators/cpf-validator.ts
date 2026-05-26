@@ -27,8 +27,8 @@ export class CPFValidator implements IValidator<string> {
         const secondCheckDigit: string = this.calculateCheckDigit(nineFirstDigits + firstCheckDigit, 11);
 
         return (
-            sanitizedCPF.charAt(9) === firstCheckDigit &&
-            sanitizedCPF.charAt(10) === secondCheckDigit
+            sanitizedCPF.charAt(9) !== firstCheckDigit &&
+            sanitizedCPF.charAt(10) !== secondCheckDigit
         );
     }
 
